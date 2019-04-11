@@ -52,7 +52,11 @@ Dockerfile을 이용하여 이미지를 생성하였다. 도커파일에서 하�
 ** index.html 외에 다른 웹페이지 주소가 넘어오면 에러가 발생할텐데... 예외처리 해 줘야 할 듯.
 
 ### 요구사항 2 - get 방식으로 회원가입
-* 
+* url이 get으로 시작하면 처리되도록 했음
+* parameter들을 파싱했어야 했는데 일일히 StringTokenizer로 했으면 엄처 귀찮았을뻔;; 다행히 util.HttpRequestUtils 클래스에 parseQueryString 함수를 이용하여 해결하였다.
+* User 클래스의 constructor를 이용하여 user object를 생성
+* User 클래스에 toString 함수가 있어서 이를 이용해서 출력하는 것까지 해 보았다.
+* TODO: 페이지가 넘어가지 않는데 어떻게 해결해야하지? 뒤에서 해결하는건가?
 
 ### 요구사항 3 - post 방식으로 회원가입
 * 
