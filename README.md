@@ -64,7 +64,8 @@ Dockerfile을 이용하여 이미지를 생성하였다. 도커파일에서 하�
 * 요구사항 2 코드를 고치고 싶지 않아서 기존 while문 안에 또 string을 순차적으로 읽는 while문을 작성했는데 구조가 좋아보이지는 않는다.
 
 ### 요구사항 4 - redirect 방식으로 이동
-* 
+* response200Header 코드를 참조하여 response302Header 함수 구현. 아직도 http 동작 방식을 잘 모르니 복붙 식으로 할 수 밖에 없는 거 같다.
+* browser url 수정을 어떻게 해줘야 하는지 몰라서 헤맸는데, wikipedia에 있는 샘플처럼 Location을 넣어주니 동작했음.
 
 ### 요구사항 5 - cookie
 * 
